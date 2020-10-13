@@ -1,0 +1,54 @@
+.header{
+    background:rgb(145, 175, 166);
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    height:4rem;
+}
+
+.header h1{
+    font-size:1.5rem;
+    color:white;
+}
+
+.header__options{
+    font-weight:bolder;
+    text-decoration: none;
+    display:flex;
+}
+
+.login-confirm {
+    /* position:relative; */
+    margin:0 1rem;
+    font-size:1rem;
+}
+
+.login-confirm a::before{
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin-bottom:-0.5rem;
+    height:0.2rem;
+    width:0%;
+    background:rgb(88, 121, 88);
+    transition:all 0.5s ease-in-out;
+}
+
+.selected{
+    color:rgb(88, 121, 88);
+    position:relative;
+}
+
+
+.selected:hover::before{
+    width:100%;
+}
+
+
+a{
+    text-decoration:none;
+    color:rgb(57, 78, 57);
+}
+
